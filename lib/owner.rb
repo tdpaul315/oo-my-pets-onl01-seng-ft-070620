@@ -51,11 +51,11 @@ class Owner
   end
   
   def sell_pets
-    self.cats.each do |cat|
+    @@pets.cats.each do |cat|
       self.cats.delete(cat)
       Cat.owner = nil
       Cat.mood = "nervous"
-  self.dogs.each do |dog|
+  @@pets.dogs.each do |dog|
       self.dogs.delete(dog)
       Dog.owner = nil
       Dog.mood = "nervous"
