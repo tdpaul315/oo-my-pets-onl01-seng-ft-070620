@@ -55,6 +55,7 @@ class Owner
       self.cats.delete(cat)
       cat.owner = nil
       cat.mood = "nervous"
+  end 
 end 
 
 
